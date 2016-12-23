@@ -1,0 +1,6 @@
+.shadow {
+	border: 1px solid #e6e6e6;
+	border-radius: 5px;
+	box-shadow: 0px 2px 3px #ececec;
+	background: #fff;
+}
