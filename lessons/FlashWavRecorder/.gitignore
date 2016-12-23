@@ -1,0 +1,10 @@
+!.gitignore
+*~
+\#*\#
+.\#*
+html/audio
+
+.gradle/
+.idea/
+build/
+*.iml
