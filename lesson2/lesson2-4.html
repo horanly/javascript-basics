@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+		<title>第二天学习---返璞归真</title>
+		<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+
+		<style type="text/css">
+			.demo {
+				width: 500px;
+				margin: 10% auto 0;
+				padding: 20px;
+			}
+		</style>
+	</head>
+<!--
+	作者：frankraoly@163.com
+	时间：2016-12-23
+	描述：任务
+第一步： 编写代码完成一个函数的定义吧。
+
+第二步： 我们来补充函数体中的控制语句，完成函数功能吧。
+
+提示:再想一想，两个整数比较有三种情况，大于，等于或小于，所以我们需要控制语句判断(if...else if)。
+第三步：  写好的函数，我们就可以任意调用函数了。通过函数调用实现两组数值中，返回较大值吧。
+-->
+	<body>
+
+		<div class="demo ">
+			<h2 id="con">JavaScript课程</H2>
+			<div class="shadow p20">
+				<script type="text/javascript">
+					//定义函数
+					//函数体，判断两个整数比较的三种情况
+					function compare( a , b ){
+						if(a>b){
+							return a;
+						}
+						else if(a<b){
+							return b;
+						}
+						else {
+							return "a和b相等"
+						}
+					}
+					//调用函数，实现下面两组数中，返回较大值。
+					document.write(" 5 和 4 的较大值是:" +compare(5,4)+ "<br>");
+					document.write(" 6 和 3 的较大值是:"+compare(6,3));
+				</script>
+			</div>
+		</div>
+	</body>
+
+</html>

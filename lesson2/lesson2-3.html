@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+		<title>第二天学习---返璞归真</title>
+		<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+
+		<style type="text/css">
+			.demo {
+				width: 500px;
+				margin: 10% auto 0;
+				padding: 20px;
+			}
+		</style>
+	</head>
+<!--
+	作者：frankraoly@163.com
+	时间：2016-12-23
+	描述：任务
+第一步： 把这些数据组成一个数组，方便我们之后操作哦。
+
+提示: 使用二维数组。
+第二步： 筛选数据吧，首先找出都是大一的所有信息 ;
+
+第三步： 最后再一次筛选上一步得到的数据，打印出都是女生的姓名 ;
+
+提示: 可以用switch 或 if 语句进行筛选。
+-->
+	<body>
+
+		<div class="demo ">
+			<h2 id="con">JavaScript课程</H2>
+			<div class="shadow p20">
+				<script type="text/javascript">
+					//第一步把之前的数据写成一个数组的形式,定义变量为 infos
+					var infos = [
+						    ['小A','女',21,'大一'],  
+						    ['小B','男',23,'大三'],
+						    ['小C','男',24,'大四'],  
+						    ['小D','女',21,'大一'],
+							['小E','女',22,'大四'],  
+							['小F','男',21,'大一'],
+							['小G','女',22,'大二'],  
+							['小H','女',20,'大三'],
+							['小I','女',20,'大一'],  
+							['小J','男',20,'大三']
+					];
+					//第一次筛选，找出都是大一的信息
+						document.write( '第一次筛选：<br>');
+						for(i=0;i<infos.length;i++){
+							if(infos[i][3]=="大一"){
+								document.write( infos[i] +'<br>')
+							};
+						};
+					document.write( '第二次筛选：<br>');
+					//第二次筛选，找出都是女生的信息
+					for(i=0;i<infos.length;i++){
+							if(infos[i][1]=="女"){
+								document.write(infos[i] +'<br>')
+							};
+						}
+				</script>
+			</div>
+		</div>
+	</body>
+
+</html>

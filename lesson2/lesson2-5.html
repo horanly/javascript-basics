@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+		<title>第二天学习---返璞归真</title>
+		<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+
+		<style type="text/css">
+			.demo {
+				width: 50%;
+				margin: 10% auto 0;
+				padding: 20px;
+			}
+		</style>
+	</head>
+	<!--
+	作者：frankraoly@163.com
+	时间：2016-12-23
+	描述：任务
+第一步： 创建构建运算函数count()。
+
+第二步： 获取两个输入框中的值和获取选择框的值。
+
+提示：document.getElementById( id名 ).value 获取或设置 id名的值。
+第三步： 获取通过下拉框来选择的值来改变加减乘除的运算法则。
+
+提示：使用switch判断运算法则。
+第四步：  通过 = 按钮来调用创建的函数，得到结果。
+-->
+
+	<body>
+		<script type="text/javascript">
+			function count() {
+
+				//获取第一个输入框的值
+				//获取第二个输入框的值
+				//获取选择框的值
+				//获取通过下拉框来选择的值来改变加减乘除的运算法则
+				//设置结果输入框的值 
+				var Text1 = document.getElementById("txt1").value;
+				var Text2 = document.getElementById("txt2").value;
+				var sele = document.getElementById("select").value;
+				var ovar = "";
+				switch(sele){
+					case "+":
+						ovar = parseFloat( Text1 ) + parseFloat( Text2 );
+						break;
+					case "-":
+						ovar = parseFloat( Text1 ) - parseFloat( Text2 );
+						break;
+					case "*":
+						ovar = parseFloat( Text1 ) * parseFloat( Text2 );
+						break;
+					default:
+						ovar = parseFloat( Text1 ) / parseFloat( Text2 );
+				}
+				
+				document.getElementById("fruit").value = ovar;
+
+			}
+		</script>
+		<div class="demo ">
+			<input type='text' id='txt1' />
+			<select id='select'>
+				<option value='+'>+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<input type='text' id='txt2' />
+			<input type='button' value=' = ' onclick='count()' />
+			<!--通过 = 按钮来调用创建的函数，得到结果-->
+			<input type='text' id='fruit' />
+		</div>
+	</body>
+
+</html>

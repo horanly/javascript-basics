@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" Content="text/html; charset=utf-8" />
+		<title>第二天学习---返璞归真</title>
+		<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+
+		<style type="text/css">
+			.demo {
+				width: 500px;
+				margin: 10% auto 0;
+				padding: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+<!--
+	作者：frankraoly@163.com
+	时间：2016-12-23
+	描述：任务
+第一步：定义一个数组，存储要展示的图形。
+
+提示:
+   var  arr = ['*','##',"***","&&","****","##*"];
+   arr[7] = "**";
+第二步：预想一下arr 数组的长度是多少？     
+
+第三步：将数组内容输出，完成达到的效果。
+
+ 提示: 想在不同行显示不同数组内容，别忘记<br/>换行标签。
+-->
+		<div class="demo ">
+			<h2 id="con">JavaScript课程</H2>
+			<div class="shadow p20">
+				<script type="text/javascript">
+					//创建数组
+					 var  arr = ['*','##',"***","&&","****","##@"];
+   					 arr[7] = "**";
+					//显示数组长度
+					alert(arr.length)
+					//将数组内容输出，完成达到的效果。
+					for(i=0;i<arr.length;i++){
+						if(arr[i]!=undefined){
+							document.write(arr[i] +"<br>" )
+						}
+					}
+				</script>
+			</div>
+		</div>
+	</body>
+
+</html>
