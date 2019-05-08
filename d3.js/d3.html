@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<script src="http://d3js.org/d3.v3.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<svg class="load_ellipse" xmlns="http://www.w3.org/2000/svg" version="1.1">
+			<ellipse cx="26" cy="10" rx="26" ry="10" style="fill:#ddd;stroke:none;"></ellipse>
+		</svg>
+		<p>Apple</p>
+		<p>Pear</p>
+		<p>Banana</p>
+
+		<script type="text/javascript">
+			var str = "China";
+
+			var body = d3.select("body");
+			var p = body.selectAll("p");
+
+			p.datum(str);
+
+			p.text(function(d, i) {
+				return "第 " + i + " 个元素绑定的数据是 " + d;
+			});
+		</script>
+		<div id="chart">
+		  <div style="height: 4px;"></div>
+		  <div style="height: 8px;"></div>
+		  <div style="height: 15px;"></div>
+		  <div style="height: 16px;"></div>
+		  <div style="height: 23px;"></div>
+		  <div style="height: 42px;"></div>
+		</div>
+		
+		<style type="text/css">
+			#chart div {
+  display: inline-block;
+  background: #4285F4;
+  width: 20px;
+  margin-right: 3px;
+}
+		</style>
+		
+		<script type="text/javascript">
+			d3.select('#chart')
+			  .selectAll("div")
+			  .data([4, 8, 15, 16, 23, 42])
+			  .enter()
+			  .append("div")
+			  .style("height", (d)=> d + "px")
+		</script>
+
+	</body>
+
+</html>
