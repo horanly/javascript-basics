@@ -20,6 +20,7 @@
 - 对象字面量
 - for...of 循环
 - mmap 和set
+- async/await 函数
 
 
 
